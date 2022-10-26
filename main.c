@@ -51,7 +51,7 @@ int main(int argc, char **argv) {
     matrice *t = m;
     m = n;
     n = t;
-    sleep_gol(100);
+    sleep_gol(50);
     clear_out();
   }
   return EXIT_SUCCESS;

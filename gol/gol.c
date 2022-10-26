@@ -144,8 +144,8 @@ int print_mc(const matrice *m) {
           return EOF;
         }
       }
-    }
       ++c;
+    }
     if (printf(" ║\n") == EOF) {
       return EOF;
     }
@@ -215,7 +215,7 @@ int clear_out(void) {
 }
 
 void sleep_gol(int ms) {
-  Sleep(ms);
+  Sleep((long unsigned int) ms);
 }
 
 #elif defined(__unix__)
